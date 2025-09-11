@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Prince - Noah's Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: "Crimson Text", serif;
+        color: rgba(255, 255, 255, 0.87);
+
+        background-image: url("img/greyBackground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        z-index: -2;
+    }
+
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, 
+            rgba(42, 42, 42, 0.749) 0%, 
+            transparent 200px, 
+            transparent calc(100% - 200px), 
+            rgba(42, 42, 42, 0.749) 100%);
+        pointer-events: none;
+        z-index: -2;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: rgb(123, 118, 118);
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    .logo-link {
+        position:fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+
+    .logo-link img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        transition: transform 0.3s ease;
+    }
+
+    .logo-link img:hover {
+        transform: scale(1.1);
+    }
+
+    .little-prince-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #333;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .little-prince-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .story-text {
+        text-align: left;
+        line-height: 1.6;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 10px 20px;
+        background-color: rgba(42, 42, 42, 0.8);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+        background-color: rgba(42, 42, 42, 1);
+    }
+
+    .highlight-yellow {
+        background-color: yellow;
+        color: black;
+    }
+
+    .text-red {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- Logo will go in top left corner-->
+    <a href="index.html" class="logo-link">
+        <img src="img/labubu.png" alt="Home">
+    </a>
+
+    <h1>Da Luh Prince</h1>
+    <h2>Antoine de Saint-Exupéry</h2>
+
+    <div class="little-prince-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG" alt="The Little Prince Book Cover" class="little-prince-image">
+        
+        <div class="story-text">
+            <p>As the little prince dropped off to sleep, I took him in my arms and set out walking once more. <span class="highlight-yellow">I felt deeply moved, and stirred. It seemed to me that I was carrying a very fragile treasure.</span> <span class="highlight-yellow">It seemed to me, even, that there was nothing more fragile on all Earth.</span> In the moonlight I looked at his pale forehead, his closed eyes, his locks of hair that trembled in the wind, and I said to myself: <span class="text-red">"What I see here is nothing but a shell. What is most important is invisible..."</span></p>
+            
+            <p>As his lips opened slightly with the suspicion of a half-smile, I said to myself, again: <span class="text-red">"What moves me so deeply, about this little prince who is sleeping here, is his loyalty to a flower-- the image of a rose that shines through his whole being like the flame of a lamp, even when he is asleep . . ."</span> And I felt him to be more fragile still. <span class="highlight-yellow">I felt the need of protecting him, as if he himself were a flame that might be extinguished by a little puff of wind . . .</span></p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Go back to index.html</a>
+
+</body>
+</html>
